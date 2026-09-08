@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 
 // Configure Axios Defaults
-axios.defaults.baseURL = '';
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || '';
 
 export default function App() {
     // Authentication State
